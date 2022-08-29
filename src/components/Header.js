@@ -11,7 +11,7 @@ export default function Header() {
     <Typography
       as='div'
       variant='small'
-      className='p-1 font-normal capitalize link-underline link-underline-color'
+      className='p-4 text-xl font-normal capitalize link-underline link-underline-color'
     >
       <a href={`#${item}`} className='flex items-center' onClick={() => setOpenNav(false)} >
         {item}

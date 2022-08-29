@@ -1,15 +1,6 @@
-import React, { useEffect } from 'react'
-import { useScroll } from 'framer-motion'
+import React from 'react'
 
 function About() {
-  // const { scrollY } = useScroll()
-
-  // useEffect(() => {
-  //   return scrollY.onChange((latest) => {
-  //     console.log('Page scroll: ', latest)
-  //   })
-  // }, [])
-
   return (
     <div id='about' className='pt-20'>
       <h2 className='text-3xl font-bold'>About me</h2>
@@ -17,7 +8,7 @@ function About() {
       <div className='timeline'>
         <div className='timeline-container left'>
           <div className='date'>1995</div>
-          
+
           <div className='content'>
             <h2>Hello world! 💖</h2>
             <p>The day I cried so lought but my parents were laugh together. 😄</p>
@@ -25,7 +16,7 @@ function About() {
         </div>
         <div className='timeline-container right'>
           <div className='date'>2017</div>
-          
+
           <div className='content'>
             <h2>First Job! 🎉</h2>
             <p>I was working in the Hospitality industry, as a receptionist, and a tour guide.</p>
@@ -33,7 +24,7 @@ function About() {
         </div>
         <div className='timeline-container left'>
           <div className='date'>2020</div>
-          
+
           <div className='content'>
             <h2>The first approach to the IT industry 💻</h2>
             <p>
@@ -44,7 +35,7 @@ function About() {
         </div>
         <div className='timeline-container right'>
           <div className='date'>2022</div>
-          
+
           <div className='content'>
             <h2>Web Developer 🌐</h2>
             <p>
@@ -54,7 +45,7 @@ function About() {
         </div>
         <div className='timeline-container left'>
           <div className='date'>Now</div>
-          
+
           <div className='content'>
             <h2>Looking for the opportunity 💼</h2>
             <p>
