@@ -19,8 +19,8 @@ function Hero() {
       <div className='text-3xl'>
         I'm a&nbsp;
         <TypeAnimation
-          sequence={[`Web Developer.`, 2500, `Learner.`, 2500, `Traveller.`, 2500]}
-          speed={1}
+          sequence={[`Web Developer.`, 2000, `Learner.`, 2000, `Traveller.`, 2000]}
+          speed={2}
           wrapper='span'
           cursor={true}
           repeat={Infinity}
