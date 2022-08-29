@@ -3,12 +3,13 @@ import { Navbar, MobileNav, Typography, IconButton } from '@material-tailwind/re
 
 export default function Header() {
   const [openNav, setOpenNav] = useState(false)
-  const navItems = ['about', 'project', 'contact']
+  const navItems = ['about', 'projects', 'contact']
   useEffect(() => {
     window.addEventListener('resize', () => window.innerWidth >= 960 && setOpenNav(false))
   }, [])
   const navList = navItems.map((item) => (
     <Typography
+      key={item}
       as='div'
       variant='small'
       className='p-4 text-xl font-normal capitalize link-underline link-underline-color'
