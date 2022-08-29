@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <footer>
-      <div className="container mx-auto px-4 my-4" >
+      <div className="container mx-auto my-20" >
        Copyright &copy; MinhY
       </div>
     </footer>

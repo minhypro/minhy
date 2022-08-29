@@ -12,7 +12,7 @@ function App() {
   return (
     <div className='App pb-60 bg-slate-800 text-white'>
       <Header />
-      <div className='container mx-auto'>
+      <div className='mt-32 container mx-auto'>
         <div className='avatar-border rounded-full w-56 h-56 bg-gradient-to-b from-sky-500 to-pink-500 mx-auto flex items-center' >
           <img
             className='rounded-full w-52 h-52 mx-auto'
@@ -29,7 +29,7 @@ function App() {
       <div className='text-3xl'>
         I'm a&nbsp;
         <TypeAnimation
-          sequence={[`Developer.`, 2500, `Learner.`, 2500, `Traveller.`, 2500]}
+          sequence={[`Web Developer.`, 2500, `Learner.`, 2500, `Traveller.`, 2500]}
           speed={1}
           wrapper='span'
           cursor={true}
@@ -56,5 +56,4 @@ function App() {
   )
 }
 
-// Hi, my name is Minh Y <span className='text-3xl text-white font-normal'>/miŋ i:/</span>
 export default App
