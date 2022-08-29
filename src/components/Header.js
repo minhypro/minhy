@@ -13,7 +13,7 @@ export default function Header() {
       variant='small'
       className='p-1 font-normal capitalize link-underline link-underline-color'
     >
-      <a href={`#${item}`} className='flex items-center'>
+      <a href={`#${item}`} className='flex items-center' onClick={() => setOpenNav(false)} >
         {item}
       </a>
     </Typography>
