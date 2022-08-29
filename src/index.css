@@ -24,3 +24,12 @@ a:hover .link-underline,
 *::selection {
     color: rgb(255, 45, 45);
 }
+
+.typing-text:after {
+    color:rgb(255, 118, 118);
+}
+
+.avatar-border {
+    width: 13.5rem;
+    height: 13.5rem;
+}
