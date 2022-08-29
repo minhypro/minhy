@@ -52,3 +52,162 @@ a:hover .link-underline,
   background-size: 100% 3px;
   background-position: 0 100%
 }
+
+
+/* Progress bar in About section */
+@media screen and (min-width: 768px) {
+  .progess-bar {
+    left: 50%;
+  }
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #006E51;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.timeline-container {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.timeline-container.left {
+  left: 0;
+}
+
+.timeline-container.right {
+  left: 50%;
+}
+
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: #ffffff;
+  border: 2px solid #006E51;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.timeline-container.right::after {
+  left: -8px;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: #006E51;
+  z-index: 1;
+}
+
+.timeline-container.right::before {
+  left: 8px;
+}
+
+.timeline-container .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 1rem);
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.timeline-container.left .date {
+  right: -75px;
+}
+
+.timeline-container.right .date {
+  left: -75px;
+}
+
+.timeline-container .content {
+  padding: 30px;
+  /* background: #F6D155; */
+  position: relative;
+  background: #cbd5e0;
+
+
+  border-radius: 20px;
+}
+
+.timeline-container .content h2 {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+.timeline-container .content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgb(26,32,44)
+}
+
+@media (max-width: 767.98px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .timeline-container {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .timeline-container.right {
+    left: 0%;
+  }
+
+  .timeline-container.left::after, 
+  .timeline-container.right::after {
+    left: 82px;
+  }
+
+  .timeline-container.left::before,
+  .timeline-container.right::before {
+    left: 100px;
+    border-color: transparent #006E51 transparent transparent;
+  }
+
+  .timeline-container.left .date,
+  .timeline-container.right .date {
+    right: auto;
+    left: 15px;
+  }
+
+  .timeline-container.left .icon,
+  .timeline-container.right .icon {
+    right: auto;
+    left: 146px;
+  }
+
+}
