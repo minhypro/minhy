@@ -29,7 +29,7 @@ function App() {
       <div className='text-3xl'>
         I'm a&nbsp;
         <TypeAnimation
-          sequence={[`developer.`, 2500, `learner.`, 2500, `traveller.`, 2500]}
+          sequence={[`Developer.`, 2500, `Learner.`, 2500, `Traveller.`, 2500]}
           speed={1}
           wrapper='span'
           cursor={true}
