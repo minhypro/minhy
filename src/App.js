@@ -35,13 +35,21 @@ function App() {
           cursor={true}
           repeat={Infinity}
         />
-        <br />
+        <div className="container mt-10 mx-auto flex items-center justify-center">
         <motion.div
-          className='mt-5 p-6 bg-white inline-block'
-          animate={{ rotate: 180 }}
+          className='square'
+          animate={{ rotate: 180, x: 200 }}
           repeat={Infinity}
           transition={{ type: 'spring', repeat: Infinity, repeatType: 'mirror', duration: 2 }}
-        />
+          />
+        <motion.div
+          className='circle'
+          animate={{ rotate: 180, x: -200 }}
+          repeat={Infinity}
+          transition={{ type: 'spring', repeat: Infinity, repeatType: 'mirror', duration: 2 }}
+          />
+          
+          </div>
       </div>
       <Footer />
     </div>
