@@ -150,15 +150,12 @@ a:hover .link-underline,
 
 .timeline-container .content {
   padding: 30px;
-  /* background: #F6D155; */
   position: relative;
   background: #cbd5e0;
-
-
   border-radius: 20px;
 }
 
-.timeline-container .content h2 {
+.timeline-container .content h3 {
   margin-bottom: 16px;
   font-size: 20px;
   font-weight: 600;
@@ -194,7 +191,7 @@ a:hover .link-underline,
 
   .timeline-container.left::before,
   .timeline-container.right::before {
-    left: 100px;
+    left: 98px;
     border-color: transparent #006E51 transparent transparent;
   }
 
