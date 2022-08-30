@@ -2,7 +2,7 @@ import React from 'react'
 
 function Card({ link, img, title, content }) {
   return (
-    <div className='group flex flex-col hover:scale-102 hover:cursor-pointer transition-all ease-linear duration-200 text-left mb-7'>
+    <div className='group dark:bg-slate-800 flex flex-col hover:scale-102 hover:cursor-pointer transition-all ease-linear duration-200 text-left mb-7'>
       <a href={link}>
         <img src={img} alt='' />
         <div className='p-8 dark:bg-gray-600 bg-slate-300'>
