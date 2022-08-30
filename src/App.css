@@ -10,28 +10,29 @@
 .circle {
   width: 60px;
   height: 60px;
-  border-width: 4px;
+  margin-left: 25px;
+  border-width: 2px;
   border-radius: 50%;
   box-shadow: 0 0 .2rem #fff,
   0 0 .2rem #fff,
   0 0 2rem #bc13fe,
   0 0 0.8rem #bc13fe,
-  0 0 2.8rem #bc13fe,
   inset 0 0 1.3rem #bc13fe; 
 }
 
 .square {
-  margin-right: 100px;
   width: 60px;
   height: 60px;
-  border-width: 4px;
+  border-width: 2px;
   box-shadow: 0 0 .2rem #fff,
   0 0 .2rem #fff,
   0 0 2rem #bc13fe,
   0 0 0.8rem #bc13fe,
-  0 0 2.8rem #bc13fe,
-  inset 0 0 1.3rem #bc13fe; 
-  
+  inset 0 0 1rem #bc13fe;  
+}
+
+.plus {
+  filter: brightness(2) contrast(5) saturate(7) hue-rotate(-15deg);
 }
 
 .link-underline {
@@ -207,4 +208,23 @@ a:hover .link-underline,
     left: 146px;
   }
 
+}
+
+/* Project section */
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  background: #181823;
+  margin-bottom: 30px;
 }

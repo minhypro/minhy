@@ -19,8 +19,8 @@ function About() {
           <div className='content'>
             <h3>The first approach to the IT industry 💻</h3>
             <p>
-              A brand new Quality Assurance Engineer with a huge passion for coding. After 1 year of
-              working, I decided to pursue my passion is coding
+              A brand new Quality Assurance Engineer with a huge passion for coding. Nearly two years of
+              working, I decided to pursue my passion which is coding
             </p>
           </div>
         </div>
@@ -30,7 +30,7 @@ function About() {
           <div className='content'>
             <h3>Web Developer 🌐</h3>
             <p>
-              After a long time of self-taught coding. I built some interesting websites and get feedback from community.
+              After a long time of self-taught coding. I built some interesting websites and got constructive feedback from community.
             </p>
           </div>
         </div>
@@ -40,7 +40,7 @@ function About() {
           <div className='content'>
             <h3>Looking for the opportunity 💼</h3>
             <p>
-              I currently looking for the opportunity as a Web Developer.
+              I am currently looking for the opportunity as a Web Developer.
               <br />
               My major are Javascript and ReactJS
             </p>
