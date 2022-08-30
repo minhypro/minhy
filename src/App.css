@@ -228,3 +228,10 @@ a:hover .link-underline,
   background: #181823;
   margin-bottom: 30px;
 }
+
+@media (max-width: 767.98px) {
+  .my-masonry-grid_column > div { 
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
