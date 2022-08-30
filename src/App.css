@@ -6,6 +6,19 @@ i {
   font-style: normal;
 }
 
+/* Scroll progress */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: red;
+  transform-origin: 0%;
+  z-index: 999;
+}
+/*  */
+
 .avatar-border {
   width: 13.5rem;
   height: 13.5rem;
@@ -139,7 +152,6 @@ a:hover .link-underline,
   text-align: center;
   font-size: 20px;
   font-weight: bold;
-  color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
@@ -225,12 +237,6 @@ a:hover .link-underline,
 .my-masonry-grid_column {
   padding-left: 30px; /* gutter size */
   background-clip: padding-box;
-}
-
-/* Style your items */
-.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
-  background: #181823;
-  margin-bottom: 30px;
 }
 
 @media (max-width: 767.98px) {

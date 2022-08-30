@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Navbar, MobileNav, IconButton } from '@material-tailwind/react'
+import { MobileNav, IconButton } from '@material-tailwind/react'
+import useDarkMode from '../hooks/useDarkMode'
 
 export default function Header() {
   const [openNav, setOpenNav] = useState(false)
@@ -12,15 +13,33 @@ export default function Header() {
       key={item}
       className='p-4 text-xl font-normal capitalize link-underline link-underline-color'
     >
-      <a href={`#${item}`} className='flex items-center' onClick={() => setOpenNav(false)} >
+      <a href={`#${item}`} className='flex items-center' onClick={() => setOpenNav(false)}>
         {item}
       </a>
     </div>
   ))
 
+  const [darkMode, setDarkMode] = useDarkMode()
+
   return (
-    <Navbar className='mx-auto max-w-screen-xl py-6 px-4 lg:px-8 lg:py-8' color='transparent'>
-      <div className='container mx-auto flex items-center justify-end text-blue-gray-900'>
+    <nav className='mx-auto max-w-screen-xl py-6 px-4 lg:px-8 lg:py-8' color='transparent'>
+      <div className='container mx-auto flex items-center justify-between '>
+        {darkMode ? (
+          <div
+            className='p-4 hover:cursor-pointer text-3xl hover:text-yellow-400'
+            onClick={() => setDarkMode((prev) => !prev)}
+          >
+            <i className='fa-solid fa-moon'></i>
+          </div>
+        ) : (
+          <div
+            className='p-4 hover:cursor-pointer text-3xl  hover:text-red-600'
+            onClick={() => setDarkMode((prev) => !prev)}
+          >
+            <i className='fa-solid fa-sun'></i>
+          </div>
+        )}
+
         <div className='hidden lg:block'>
           <ul className='mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6'>
             {navList}
@@ -59,6 +78,6 @@ export default function Header() {
       <MobileNav open={openNav} className='container flex items-end flex-col'>
         {navList}
       </MobileNav>
-    </Navbar>
+    </nav>
   )
 }
