@@ -6,6 +6,19 @@ i {
   font-style: normal;
 }
 
+/* Scroll progress */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: red;
+  transform-origin: 0%;
+  z-index: 999;
+}
+/*  */
+
 .avatar-border {
   width: 13.5rem;
   height: 13.5rem;
