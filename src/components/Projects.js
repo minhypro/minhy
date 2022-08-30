@@ -1,6 +1,8 @@
 import React from 'react'
 import Masonry from 'react-masonry-css'
 import Card from '../components/Card'
+import { motion } from "framer-motion";
+
 import ycommerce from '../assets/images/ycommerce.png'
 import ymovie from '../assets/images/ymovie.png'
 import airbnb from '../assets/images/airbnb.png'
@@ -71,7 +73,6 @@ function Projects() {
           />
         ))}
       </Masonry>
-      
     </div>
   )
 }
