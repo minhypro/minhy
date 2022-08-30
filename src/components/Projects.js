@@ -63,6 +63,7 @@ function Projects() {
         <h2 className='mt-5 mb-20 text-5xl font-bold'>Work that I've done for the past 6 months</h2>
         {myprojects.map(project => (
           <Card
+          key={project.title}
           img={project.img}
           title={project.title}
           content={project.content}
