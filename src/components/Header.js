@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Navbar, MobileNav, Typography, IconButton } from '@material-tailwind/react'
+import { Navbar, MobileNav, IconButton } from '@material-tailwind/react'
 
 export default function Header() {
   const [openNav, setOpenNav] = useState(false)
@@ -8,16 +8,14 @@ export default function Header() {
     window.addEventListener('resize', () => window.innerWidth >= 960 && setOpenNav(false))
   }, [])
   const navList = navItems.map((item) => (
-    <Typography
+    <div
       key={item}
-      as='div'
-      variant='small'
       className='p-4 text-xl font-normal capitalize link-underline link-underline-color'
     >
       <a href={`#${item}`} className='flex items-center' onClick={() => setOpenNav(false)} >
         {item}
       </a>
-    </Typography>
+    </div>
   ))
 
   return (
