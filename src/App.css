@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
+  
 }
 
 i {
@@ -19,6 +21,7 @@ i {
 }
 /*  */
 
+/* Avatar */
 .avatar-border {
   width: 13.5rem;
   height: 13.5rem;
@@ -50,6 +53,7 @@ i {
 
 .plus {
   filter: brightness(2) contrast(5) saturate(7) hue-rotate(-15deg);
+  -webkit-filter: brightness(2) contrast(5) saturate(7) hue-rotate(-15deg);
 }
 
 .link-underline {
