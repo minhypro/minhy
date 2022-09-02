@@ -30,7 +30,7 @@ function About() {
           <div className='content'>
             <h3>Web Developer 🌐</h3>
             <p>
-              After a long time of self-taught coding. I built some interesting websites and got
+              After a long time of self-study coding. I built some interesting websites and got
               constructive feedback from community.
             </p>
           </div>
