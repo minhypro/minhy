@@ -24,21 +24,31 @@ export default function Header() {
   return (
     <nav className='mx-auto max-w-screen-xl py-6 px-4 lg:px-8 lg:py-8' color='transparent'>
       <div className='container mx-auto flex items-center justify-between '>
-        {darkMode ? (
-          <div
-            className='p-4 hover:cursor-pointer text-3xl hover:text-yellow-400'
-            onClick={() => setDarkMode((prev) => !prev)}
-          >
-            <i className='fa-solid fa-moon'></i>
+        <div>
+          <div className='flex items-center relative rounded-full dark:bg-gray-200  bg-slate-800'>
+            <div
+              className={`p-2 z-10 hover:cursor-pointer text-3xl hover:text-yellow-400 duration-1000 ${
+                !darkMode && 'invisible animate-[fade_1s]'
+              }`}
+              onClick={() => setDarkMode((prev) => !prev)}
+            >
+              <i className='fa-solid fa-moon'></i>
+            </div>
+            <div
+              className={`p-2 z-10 hover:cursor-pointer text-3xl hover:text-red-600 duration-1000 ${
+                darkMode && 'invisible animate-[fade_1s]'
+              }`}
+              onClick={() => setDarkMode((prev) => !prev)}
+            >
+              <i className='fa-solid fa-sun'></i>
+            </div>
+            <div
+              className={`rounded-full bg-gray-200 dark:bg-slate-800 w-10 h-10 absolute z-0 right-1 duration-1000 ${
+                darkMode && 'translate-x-[-2.75rem]'
+              }`}
+            ></div>
           </div>
-        ) : (
-          <div
-            className='p-4 hover:cursor-pointer text-3xl  hover:text-red-600'
-            onClick={() => setDarkMode((prev) => !prev)}
-          >
-            <i className='fa-solid fa-sun'></i>
-          </div>
-        )}
+        </div>
 
         <div className='hidden lg:block'>
           <ul className='mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6'>
