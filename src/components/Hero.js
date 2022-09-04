@@ -15,9 +15,15 @@ function Hero() {
         </div>
       </div>
       <div className='py-10 text-5xl font-extrabold'>
-        <span className='bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-pink-500 break-words'>
-          Hi, my name is Minh Y
-        </span>
+        {viewWidth < 530 ? (
+          <span className='leading-[3.5rem] bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-pink-500 break-words'>
+            Hi, my name is <br/>Minh Y
+          </span>
+        ) : (
+          <span className='bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-pink-500 break-words'>
+            Hi, my name is Minh Y
+          </span>
+        )}
       </div>
       <div className='text-3xl'>
         I'm a&nbsp;
