@@ -8,6 +8,13 @@ module.exports = {
     extend: {
       scale: {
         '102': '1.02'
+      },
+      keyframes: {
+        fade: {
+          '0%': { opacity: 1},
+          '40%': { opacity: 0.5},
+          '100%': { opacity: 0},
+        }
       }
     },
   },
