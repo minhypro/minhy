@@ -60,7 +60,7 @@ function Projects() {
         className='my-masonry-grid my-10'
         columnClassName='my-masonry-grid_column'
       >
-        <h2 className='mt-5 mb-20 text-5xl font-bold'>Work that I've done for the past 6 months</h2>
+        <h2 className='mt-5 mb-20 text-5xl font-bold'>Work that I've done for nearly one year</h2>
         {myprojects.map(project => (
           <Card
           key={project.title}

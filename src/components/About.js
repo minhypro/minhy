@@ -58,11 +58,11 @@ function About() {
           {' '}
           <div className='date'>Now</div>
           <div className='content'>
-            <h3>Looking for the opportunity 💼</h3>
+            <h3>I've got the first job as a Web Developer! 💼</h3>
             <p>
-              I am currently looking for the opportunity as a Web Developer.
+              I am currently a Web Developer at Techvify Danang.
               <br />
-              My major are Javascript and ReactJS
+              A new journey has been started
             </p>
           </div>
         </motion.div>
